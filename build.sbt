@@ -8,6 +8,8 @@ scalaVersion := "2.11.11"
 
 resolvers += Resolver.jcenterRepo
 
+fork := true
+
 libraryDependencies ++= Seq("com.typesafe.akka" %% "akka-actor" % "2.5.0",
   "com.typesafe.akka" %% "akka-cluster" % "2.5.0",
   "com.typesafe.akka" %% "akka-cluster-sharding" % "2.5.0",
@@ -15,10 +17,11 @@ libraryDependencies ++= Seq("com.typesafe.akka" %% "akka-actor" % "2.5.0",
   "com.typesafe.akka" %% "akka-remote" % "2.5.0",
   "com.typesafe.akka" %% "akka-slf4j" % "2.5.0",
   "com.typesafe.akka" %% "akka-http" % "10.0.5",
+  "com.typesafe.akka" %% "akka-slf4j" % "2.5.0",
   "org.json4s" %% "json4s-jackson" % "3.5.0",
   "de.heikoseeberger" %% "akka-http-json4s" % "1.11.0",
   "com.github.dnvriend" %% "akka-persistence-inmemory" % "2.5.0.0",
-  "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.21"
+  "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.51"
 )
 
 libraryDependencies += "io.gatling.highcharts" % "gatling-charts-highcharts" % "2.2.4" % "test,it"

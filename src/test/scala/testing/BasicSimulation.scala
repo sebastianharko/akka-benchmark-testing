@@ -22,7 +22,7 @@ class BasicItSimulation extends Simulation {
       .header("Content-Type", "application/json")
     )
 
-  setUp(scn.inject(rampUsersPerSec(1) to (5000) during(75 seconds))).protocols(httpConf)
+  setUp(scn.inject(constantUsersPerSec(500) during(10 minutes))).protocols(httpConf)
 
 }
 
