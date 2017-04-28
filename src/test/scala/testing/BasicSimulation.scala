@@ -8,7 +8,7 @@ import io.gatling.http.Predef._
 
 import scala.concurrent.duration._
 
-class BasicItSimulation extends Simulation {
+class BasicSimulation extends Simulation {
 
   def randomId : String = UUID.randomUUID().toString
 
@@ -22,7 +22,7 @@ class BasicItSimulation extends Simulation {
       .header("Content-Type", "application/json")
     )
 
-  setUp(scn.inject(constantUsersPerSec(500) during(10 minutes))).protocols(httpConf)
+  setUp(scn.inject(constantUsersPerSec(700) during(10 minutes))).protocols(httpConf)
 
 }
 

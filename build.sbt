@@ -21,7 +21,8 @@ libraryDependencies ++= Seq("com.typesafe.akka" %% "akka-actor" % "2.5.0",
   "org.json4s" %% "json4s-jackson" % "3.5.0",
   "de.heikoseeberger" %% "akka-http-json4s" % "1.11.0",
   "com.github.dnvriend" %% "akka-persistence-inmemory" % "2.5.0.0",
-  "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.51"
+  "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.51",
+  "ch.qos.logback" % "logback-classic" % "1.1.3"
 )
 
 libraryDependencies += "io.gatling.highcharts" % "gatling-charts-highcharts" % "2.2.4" % "test,it"
